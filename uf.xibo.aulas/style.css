@@ -1,0 +1,116 @@
+        body {
+            font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+            background-color: #f3f4f6;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: flex-start;  */
+            /* min-height: 100vh; */
+            /* padding: 20px; */
+            /* box-sizing: border-box; */
+			/* color: #1B2F52; */
+        }
+        /* .container { */
+            /* background-color: #ffffff; */
+            /* border-radius: 12px;  */
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);  */
+            /* padding: 30px; */
+            /* width: 100%; */
+            /* max-width: 900px; */
+            /* box-sizing: border-box; */
+        /* } */
+        table {
+            width: 100%;
+            border-collapse: separate; 
+            border-spacing: 0;
+            overflow: hidden;
+			table-layout: fixed;
+        }
+        th, td {
+			text-align: center;
+            border-bottom: 2px solid #1B2F52; 
+			border-right: 2px solid #1B2F52; 
+			word-wrap: break-word;
+        }
+		tr {
+			height: 70px;
+		}
+		td {
+			height: 70px;
+			overflow: hidden;
+			vertical-align: middle;
+		}
+        th {
+            background-color: #1B2F52;
+            font-weight: 600;
+            color: #374151; 
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+			color: #CEE3E6;
+        }
+        tr:last-child td {
+            border-bottom: none; 
+        }
+		th:last-child, td:last-child {
+            border-right: none; 
+        }
+        /* tr:hover { */
+            /* background-color: #f3f4f6; */
+        /* } */
+		
+		/* Table column widths */
+		.tblcol-1 {
+			width: 21%;
+		}
+
+		.tblcol-2 {
+			width: 7%;
+		}
+
+		.tblcol-3 {
+			width: 9%;
+		}
+
+		.tblcol-4 {
+			width: 11%;
+		}
+
+		.tblcol-5 {
+			width: 20%;
+		}
+
+		.tblcol-6 {
+			width: 15%;
+		}
+
+		.tblcol-7 {
+			width: 17%;
+		}
+		
+        .paginator-button {
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .paginator-button:hover:not(:disabled) {
+            transform: translateY(-1px);
+        }
+        .paginator-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #3b82f6;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+		.career-title {
+			font-size: 2em;
+		}
