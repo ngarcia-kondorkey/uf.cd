@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FF Rest API",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/uf.cd.api.dll",
+            "console": "integratedTerminal",
+            "args": [],
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "https://localhost:8081;http://localhost:8080",
+                //"ASPNETCORE_Kestrel__Certificates__Default__Path": "/https/aspnetapp.pfx",
+                //"ASPNETCORE_Kestrel__Certificates__Default__Password": "password",
+                //"ASPNETCORE_DEVELOPMENT_MODE": "true",
+                "ASPNETCORE_DETAILEDERRORS": "1",
+                "ASPNETCORE_SHUTDOWNTIMEOUTSECONDS": "3"
+            },
+        }
+    ]
+}
